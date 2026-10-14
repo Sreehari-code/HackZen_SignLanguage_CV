@@ -1,0 +1,9 @@
+# Runtime tested for this workspace: 64-bit CPython 3.13 on Windows.
+# MediaPipe 1.1.0 includes the modern Tasks Gesture Recognizer API.
+# MediaPipe installs opencv-contrib-python, which provides the cv2 module.
+mediapipe==1.1.0
+opencv-contrib-python==5.0.0.93
+numpy==2.2.6
+pyttsx3==2.98
+scikit-learn==1.8.0
+joblib==1.5.3

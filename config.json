@@ -1,0 +1,73 @@
+{
+  "camera_index": 0,
+  "model_path": "models/gesture_recognizer.task",
+  "model_url": "https://storage.googleapis.com/mediapipe-models/gesture_recognizer/gesture_recognizer/float16/1/gesture_recognizer.task",
+  "custom_model_path": "models/custom_gesture_model.joblib",
+  "max_history": 12,
+  "confidence_thresholds": {
+    "builtin": 0.65,
+    "custom": 0.82
+  },
+  "stability_frames": 5,
+  "cooldown_seconds": 1.25,
+  "speak_each_phrase": true,
+  "builtin_gestures": {
+    "Open_Palm": {"phrase": "HELLO", "name": "Open palm", "enabled": true},
+    "Closed_Fist": {"phrase": "STOP", "name": "Closed fist", "enabled": true},
+    "Thumb_Up": {"phrase": "YES", "name": "Thumb up", "enabled": true},
+    "Thumb_Down": {"phrase": "NO", "name": "Thumb down", "enabled": true},
+    "Victory": {"phrase": "PEACE", "name": "Victory", "enabled": true},
+    "Pointing_Up": {"phrase": "I HAVE A QUESTION", "name": "Pointing up", "enabled": true},
+    "ILoveYou": {"phrase": "I LOVE YOU", "name": "I love you", "enabled": true}
+  },
+  "custom_static_gestures": {
+    "PLEASE": {"phrase": "PLEASE", "pose_hint": "Open hand held palm-up", "enabled": true},
+    "THANK_YOU": {"phrase": "THANK YOU", "pose_hint": "Open hand held palm-in toward the chest", "enabled": true},
+    "SORRY": {"phrase": "SORRY", "pose_hint": "Closed fist with thumb resting across the fingers", "enabled": true},
+    "HELP": {"phrase": "HELP", "pose_hint": "Thumb-up pose with palm turned inward", "enabled": true},
+    "WAIT": {"phrase": "WAIT", "pose_hint": "Index, middle, and little fingers extended; ring finger and thumb folded", "enabled": true},
+    "FINISHED": {"phrase": "FINISHED", "pose_hint": "Thumb and index fingertips pinched together, other three fingers curled", "enabled": true},
+    "I_DONT_UNDERSTAND": {"phrase": "I DON'T UNDERSTAND", "pose_hint": "Index, ring, and little fingers extended; middle finger and thumb folded", "enabled": true},
+    "REPEAT_PLEASE": {"phrase": "REPEAT PLEASE", "pose_hint": "Thumb, middle, and little fingers extended; index and ring folded", "enabled": true},
+    "LEFT": {"phrase": "LEFT", "pose_hint": "Index finger extended horizontally to the user's left", "enabled": true},
+    "RIGHT": {"phrase": "RIGHT", "pose_hint": "Index finger extended horizontally to the user's right", "enabled": true},
+    "UP": {"phrase": "UP", "pose_hint": "Middle finger extended vertically alone", "enabled": true},
+    "DOWN": {"phrase": "DOWN", "pose_hint": "Ring finger extended vertically alone", "enabled": true},
+    "NEXT": {"phrase": "NEXT", "pose_hint": "Index, middle, and ring extended; thumb and little finger folded", "enabled": true},
+    "GO_BACK": {"phrase": "GO BACK", "pose_hint": "Little finger extended alone", "enabled": true},
+    "CONFIRM": {"phrase": "CONFIRM", "pose_hint": "Index finger and thumb touch to make a circle", "enabled": true},
+    "CANCEL": {"phrase": "CANCEL", "pose_hint": "Thumb extended sideways over a closed fist", "enabled": true},
+    "SELECT": {"phrase": "SELECT", "pose_hint": "Index and thumb extended apart, other fingers folded", "enabled": true},
+    "SMALL": {"phrase": "SMALL", "pose_hint": "Thumb and index held close together", "enabled": true},
+    "THREE": {"phrase": "THREE", "pose_hint": "Thumb, index, and middle fingers extended", "enabled": true},
+    "FOUR": {"phrase": "FOUR", "pose_hint": "Four fingers extended, thumb folded", "enabled": true},
+    "GOOD_LUCK": {"phrase": "GOOD LUCK", "pose_hint": "Index and middle fingers crossed", "enabled": true},
+    "RELAX": {"phrase": "RELAX", "pose_hint": "Loose open hand with fingers comfortably curved", "enabled": true},
+    "OK": {"phrase": "OK", "pose_hint": "Thumb and middle fingertips touching, other fingers raised", "enabled": true},
+    "WATER": {"phrase": "WATER", "pose_hint": "Thumb and little finger extended; three middle fingers folded", "enabled": true},
+    "FOOD": {"phrase": "FOOD", "pose_hint": "Fingertips gathered together pointing upward", "enabled": true},
+    "REST": {"phrase": "REST", "pose_hint": "Open hand tilted diagonally with fingers together", "enabled": true},
+    "HAPPY": {"phrase": "HAPPY", "pose_hint": "Thumb and ring finger extended; index, middle, and little fingers folded", "enabled": true},
+    "SAD": {"phrase": "SAD", "pose_hint": "Index and ring fingers extended, others folded", "enabled": true},
+    "PAIN": {"phrase": "PAIN", "pose_hint": "Index and little fingers extended, middle fingers folded", "enabled": true},
+    "FRIEND": {"phrase": "FRIEND", "pose_hint": "Thumb, ring, and little fingers extended", "enabled": true},
+    "FAMILY": {"phrase": "FAMILY", "pose_hint": "Both hands can be collected as one-hand proxy: thumb touches ring fingertip, other fingers raised", "enabled": true}
+  },
+  "motion_gestures": {
+    "GOODBYE_WAVE": {
+      "phrase": "GOODBYE",
+      "name": "Open-palm side-to-side wave",
+      "start_builtin_category": "Open_Palm",
+      "enabled": true
+    }
+  },
+  "motion": {
+    "open_palm_static_dwell_seconds": 0.55,
+    "window_seconds": 2.2,
+    "minimum_reversal_amplitude_palm_widths": 0.42,
+    "minimum_reversals": 3,
+    "finish_pause_seconds": 0.35,
+    "cooldown_seconds": 2.0,
+    "maximum_net_drift_palm_widths": 1.2
+  }
+}
